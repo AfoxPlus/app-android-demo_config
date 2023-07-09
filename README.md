@@ -1,8 +1,8 @@
-# Welcome to app-android-[name_module]!
+# Welcome to app-android-demo_config!
 
-![GithubActions](https://github.com/afoxplus/app-android-[name_module]/actions/workflows/android_publish.yml/badge.svg?branch=master) ![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=afoxplus-app-android-orders&metric=alert_status)
+![GithubActions](https://github.com/afoxplus/app-android-demo_config/actions/workflows/android_publish.yml/badge.svg?branch=master) ![SonarCloud](https://sonarcloud.io/api/project_badges/measure?project=afoxplus-app-android-demo_config&metric=alert_status)
 
-[name_module] is an library for [description_module]
+Demo_config is an library for all demo configurations
 
 ## Setup
 
