@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="debug_mode">Use dev endpoints </string>
+    <string name="demo_config_title">YaListo - DemoConfig</string>
+    <string name="demo_config_button_continue">Continuar</string>
+</resources>
