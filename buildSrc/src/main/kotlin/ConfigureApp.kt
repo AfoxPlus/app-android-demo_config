@@ -4,5 +4,5 @@ object ConfigureApp {
     const val groupId = "com.afoxplus.android"
     const val artifactId = "demo_config"
     const val projectName = "app-android-${artifactId}"
-    const val version = "1.0.0"
+    const val version = "6.0.0"
 }
