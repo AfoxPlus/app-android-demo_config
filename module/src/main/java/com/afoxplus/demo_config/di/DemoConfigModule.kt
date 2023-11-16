@@ -1,6 +1,6 @@
-package com.afoxplus.module.di
+package com.afoxplus.demo_config.di
 
-import com.afoxplus.module.delivery.global.AppPropertiesDemoConfig
+import com.afoxplus.demo_config.delivery.global.AppPropertiesDemoConfig
 import com.afoxplus.network.global.AppProperties
 import dagger.Binds
 import dagger.Module

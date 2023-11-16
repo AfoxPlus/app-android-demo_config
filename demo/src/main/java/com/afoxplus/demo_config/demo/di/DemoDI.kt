@@ -1,7 +1,7 @@
-package com.afoxplus.module.demo.di
+package com.afoxplus.demo_config.demo.di
 
-import com.afoxplus.module.delivery.flow.StartDemoFlow
-import com.afoxplus.module.demo.delivery.views.activities.StartDemoFlowImpl
+import com.afoxplus.demo_config.delivery.flow.StartDemoFlow
+import com.afoxplus.demo_config.demo.delivery.views.activities.StartDemoFlowImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
