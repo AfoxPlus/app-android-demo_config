@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "com.afoxplus.module.demo"
+    namespace = "com.afoxplus.demo_config.demo"
     compileSdk = Versions.compileSdkVersion
 
     defaultConfig {
@@ -70,6 +70,10 @@ android {
         compose = true
     }
 
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.8"
+    }
+
     lint {
         disable.addAll(
             listOf(
@@ -93,8 +97,15 @@ dependencies {
     implementation(Deps.Jetpack.core)
     implementation(Deps.Jetpack.appcompat)
 
-    implementation(Deps.Jetpack.activity)
-    implementation(Deps.Jetpack.fragment)
+    implementation(Deps.JetpackCompose.activity)
+    implementation(Deps.JetpackCompose.constraintlayout)
+    implementation(Deps.JetpackCompose.navigation)
+    implementation(platform(Deps.JetpackCompose.bom))
+    implementation(Deps.JetpackCompose.ui)
+    implementation(Deps.JetpackCompose.graphics)
+    implementation(Deps.JetpackCompose.toolingPreview)
+    implementation(Deps.JetpackCompose.material3)
+    implementation(Deps.JetpackCompose.materialIconExtended)
 
     implementation(Deps.UI.materialDesign)
     implementation(Deps.UI.constraintLayout)
@@ -103,6 +114,11 @@ dependencies {
     implementation(Deps.Arch.hiltAndroid)
     kapt(Deps.Arch.hiltCompiler)
 
+    implementation(Deps.Arch.retrofit2)
+    implementation(Deps.Arch.gson)
+    implementation(Deps.Arch.loggingInterceptor)
+
+    // Test
     testImplementation(Deps.Test.jUnit)
     testImplementation(Deps.Test.testCore)
     testImplementation(Deps.Test.truth)
@@ -110,16 +126,12 @@ dependencies {
     androidTestImplementation(Deps.Test.androidJUnit)
     androidTestImplementation(Deps.Test.espresso)
 
-    implementation(Deps.Arch.retrofit2)
-    implementation(Deps.Arch.gson)
-    implementation(Deps.Arch.loggingInterceptor)
-
     // Chucker
     debugImplementation(Deps.Arch.chucker)
     "stagingImplementation"(Deps.Arch.chucker)
     releaseImplementation(Deps.Arch.chuckerNoOp)
 
-    //Business Dependencies
+    // Business Dependencies
     implementation(Deps.UI.uikit)
 
     implementation(project(mapOf("path" to ":module")))

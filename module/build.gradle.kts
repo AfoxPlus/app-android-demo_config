@@ -67,6 +67,10 @@ android {
         compose = true
     }
 
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.4.8"
+    }
+
     lint {
         disable.addAll(
             listOf(
@@ -96,14 +100,25 @@ dependencies {
     implementation(Deps.Jetpack.kotlin)
     implementation(Deps.Jetpack.core)
     implementation(Deps.Jetpack.appcompat)
-    implementation(Deps.Jetpack.activity)
-    implementation(Deps.Jetpack.fragment)
+
+    implementation(Deps.JetpackCompose.activity)
+    implementation(Deps.JetpackCompose.constraintlayout)
+    implementation(Deps.JetpackCompose.navigation)
+    implementation(platform(Deps.JetpackCompose.bom))
+    implementation(Deps.JetpackCompose.ui)
+    implementation(Deps.JetpackCompose.graphics)
+    implementation(Deps.JetpackCompose.toolingPreview)
+    implementation(Deps.JetpackCompose.material3)
+    implementation(Deps.JetpackCompose.materialIconExtended)
+
     implementation(Deps.UI.materialDesign)
     implementation(Deps.UI.constraintLayout)
+
     implementation(Deps.Arch.coroutinesCore)
     implementation(Deps.Arch.hiltAndroid)
     kapt(Deps.Arch.hiltCompiler)
 
+    // Test
     testImplementation(Deps.Test.jUnit)
     testImplementation(Deps.Test.testCore)
     testImplementation(Deps.Test.truth)
@@ -111,7 +126,7 @@ dependencies {
     androidTestImplementation(Deps.Test.androidJUnit)
     androidTestImplementation(Deps.Test.espresso)
 
-    //Business Dependencies
+    // Business Dependencies
     implementation(Deps.UI.uikit)
     implementation(Deps.Arch.network)
 }

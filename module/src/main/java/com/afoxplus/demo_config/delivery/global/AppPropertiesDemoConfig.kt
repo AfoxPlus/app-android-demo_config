@@ -1,4 +1,4 @@
-package com.afoxplus.module.delivery.global
+package com.afoxplus.demo_config.delivery.global
 
 import com.afoxplus.network.global.AppProperties
 import javax.inject.Inject

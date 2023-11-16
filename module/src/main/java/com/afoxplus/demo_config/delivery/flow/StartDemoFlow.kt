@@ -1,4 +1,4 @@
-package com.afoxplus.module.delivery.flow
+package com.afoxplus.demo_config.delivery.flow
 
 import com.afoxplus.uikit.activities.UIKitBaseActivity
 
