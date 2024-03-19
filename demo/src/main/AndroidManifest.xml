@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.afoxplus.module.demo">
+    package="com.afoxplus.demo_config.demo">
 
     <application
-        android:name=".DemoApplication"
+        android:name="com.afoxplus.demo_config.demo.DemoApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -12,12 +12,12 @@
         android:theme="@style/Theme.ThemeDemo">
 
         <activity
-            android:name=".delivery.views.activities.MainActivity"
+            android:name="com.afoxplus.demo_config.demo.delivery.views.activities.MainActivity"
             android:exported="true"
             android:theme="@style/UIKit.NoActionBar.Light" />
 
         <activity
-            android:name="com.afoxplus.module.delivery.views.activities.DemoConfigStartActivity"
+            android:name="com.afoxplus.demo_config.delivery.views.activities.DemoConfigStartActivity"
             android:exported="true"
             android:theme="@style/UIKit.NoActionBar.Light">
             <intent-filter>

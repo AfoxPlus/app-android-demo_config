@@ -1,4 +1,4 @@
-package com.afoxplus.module.delivery.global
+package com.afoxplus.demo_config.delivery.global
 
 import javax.inject.Inject
 import javax.inject.Singleton
