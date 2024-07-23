@@ -30,4 +30,3 @@ dependencyResolutionManagement {
 
 include(":demo")
 include(":module")
-apply(from = "./buildSrc/localModules.gradle.kts")
